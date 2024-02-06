@@ -152,7 +152,7 @@ export default function ClicksSummary({
                 <Section className="my-8 text-center">
                   <Link
                     className="rounded-full bg-black px-6 py-3 text-center text-[12px] font-semibold text-white no-underline"
-                    href={`https://app.${appDomain}/${projectSlug}`}
+                    href={`https://${appDomain}/${projectSlug}`}
                   >
                     Start creating links
                   </Link>
@@ -166,7 +166,7 @@ export default function ClicksSummary({
                 <Section className="my-8 text-center">
                   <Link
                     className="rounded-full bg-black px-6 py-3 text-center text-[12px] font-semibold text-white no-underline"
-                    href={`https://app.${appDomain}/${projectSlug}/analytics?interval=30d`}
+                    href={`https://${appDomain}/${projectSlug}/analytics?interval=30d`}
                   >
                     View my stats
                   </Link>

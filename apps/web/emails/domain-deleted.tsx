@@ -46,7 +46,7 @@ export default function DomainDeleted({
               Your domain <code className="text-purple-600">{domain}</code> for
               your Dub project{" "}
               <Link
-                href={`https://app.dub.co/${projectSlug}`}
+                href={`https://${domain}/${projectSlug}`}
                 className="font-medium text-blue-600 no-underline"
               >
                 {projectSlug}↗
