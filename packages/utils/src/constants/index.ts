@@ -38,7 +38,7 @@ export const FADE_IN_ANIMATION_SETTINGS = {
 export const PAGINATION_LIMIT = 100;
 
 export const SHORT_DOMAIN =
-  process.env.NEXT_PUBLIC_APP_SHORT_DOMAIN || "dub-sub.vercel.app";
+  process.env.NEXT_PUBLIC_APP_SHORT_DOMAIN || "dub.sh";
 
 export const HOME_DOMAIN = `https://${process.env.NEXT_PUBLIC_APP_DOMAIN}`;
 
@@ -51,20 +51,20 @@ export const APP_HOSTNAMES = new Set([
 
 export const APP_DOMAIN =
   process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
-    ? `https://${process.env.NEXT_PUBLIC_APP_DOMAIN}`
+    ? `https://app.${process.env.NEXT_PUBLIC_APP_DOMAIN}`
     : process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
     ? `https://preview.${process.env.NEXT_PUBLIC_APP_DOMAIN}`
     : "http://localhost:8888";
 
 export const APP_DOMAIN_WITH_NGROK =
   process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
-    ? `https://${process.env.NEXT_PUBLIC_APP_DOMAIN}`
+    ? `https://app.${process.env.NEXT_PUBLIC_APP_DOMAIN}`
     : process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
     ? `https://preview.${process.env.NEXT_PUBLIC_APP_DOMAIN}`
     : process.env.NGROK_URL || "http://localhost:8888";
 
 export const API_HOSTNAMES = new Set([
-  `${process.env.NEXT_PUBLIC_APP_DOMAIN}`,
+  `api.${process.env.NEXT_PUBLIC_APP_DOMAIN}`,
   `api.${SHORT_DOMAIN}`,
   "api.localhost:8888",
 ]);
